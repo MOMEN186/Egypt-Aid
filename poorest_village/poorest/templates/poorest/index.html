@@ -1,0 +1,29 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+<title>Poorest</title>
+</head>
+<body>
+
+<form action= "{% url 'index'%}" method="post" >
+{%csrf_token%}
+<label>search</label>
+
+<label>government</label>
+<input type="text" name="gov" >
+
+<label>center</label>
+<input type="text" name="center">
+
+<label>village</label>
+<input type="text" name="village">
+
+
+
+<input type="submit">
+</form>
+
+
+</body>
+</html>
